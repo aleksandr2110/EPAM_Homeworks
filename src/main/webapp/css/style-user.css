@@ -1,0 +1,165 @@
+.mainbackground {
+    background: #363636;  /* black  grey  -  #B5B5B5; */
+    overflow: hidden; /* Свойство overflow управляет отображением содержания блочного элемента */
+    color: white;
+}
+body {
+    background: #c7b39b;
+    color: #fff; /* Цвет текста */
+}
+td {
+    display: table-cell;
+    vertical-align: inherit;
+    color: white;
+}
+h3 {
+    font-family: "Times New Roman", Times, serif;
+    font-style: oblique; /* Курсивное начертание */
+}
+p {
+    color: white;
+}
+h2 {
+    color: silver
+}
+li:hover{      /* Определяет стиль элемента при наведении на него курсора мыши   */
+    background: #076a6c;
+}
+a href {
+    color: white; /* Цвет текста посещенной ссылки */
+}
+#orders {
+    background: #3b444b;
+    color: white;
+}
+.b1 {
+    background: navy; /* Синий цвет фона */
+    color: white; /* Белые буквы */
+    font-size: 9pt; /* Размер шрифта в пунктах */
+}
+button {
+    border-radius: 4px;
+    padding: 4px 25px;
+    color: white;
+    border: 0px;
+    /*background: green;   /* #832c6d; */
+    background: rgb(64,199,129);
+}
+
+
+html {
+    background-image: -moz-linear-gradient(top, white 0%, #959595 100%);
+}
+h1 {
+    text-align: center;
+    color: gray;
+    border-bottom: 2px solid gray;
+}
+h2 {
+    text-align: center;
+    color: gray;
+}
+button {
+    border-radius: 4px;
+    padding: 4px 25px;
+    color: white;
+    border: 0px;
+    background: #006400;
+}
+a {
+    color: #b49fcc;
+}
+a:link {
+    color: #00FF00;
+}
+a:visited {
+    color: #00BFFF;
+}
+a:active {
+    color: blue;
+}
+li:hover {      /* Определяет стиль элемента при наведении на него курсора мыши   */
+    background: #707C7A;
+}
+.m-3 {
+    background: #2F4F4F;
+}
+.row col-md-6 {
+    background: #ffffff;
+}
+input:focus {
+    outline: none; /* Скрываем рамку */
+}
+
+#reg-button, #login-button {
+    width: 100px;
+    padding: 5px;
+}
+#lang {
+    position: absolute;
+    right: 15px;
+    padding: 5px;
+    width: 110px;
+}
+#divTable {
+    padding-left: 20px;
+}
+.menu {
+    width: 100%;
+    height: 50px;
+}
+.align-by-center {
+    text-align: center;
+}
+#reg-button {
+    position: absolute;
+    right: 120px;
+}
+#login-button {
+    position: absolute;
+    right: 210px;
+}
+#faculties-button {
+    position: absolute;
+    left: 20px;
+}
+#users-button {
+    position: absolute;
+    left: 250px;
+}
+#sheets-button {
+    position: absolute;
+    left: 460px;
+}
+#faculty-create-button,
+#update-button,
+#faculty-exam-create-button,
+#faculty-exam-save-button {
+    padding: 10px 0;
+}
+.main-content {
+    min-height: 400px;
+}
+.with-border {
+    border: 1px solid gray;
+    padding: 0 5px;
+}
+.no-border {
+    border: 0;
+}
+th {
+    padding: 0 5px;
+}
+footer {
+    border-top: 2px solid gray;
+    height: 40px;
+    width: 100%;
+    margin-top: 20px;
+}
+footer p {
+    font-size: 80%;
+    text-align: center;
+}
+input:invalid {
+    box-shadow: 0 0 5px 1px red;
+}
