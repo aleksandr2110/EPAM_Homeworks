@@ -1,0 +1,52 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                             http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+
+    <changeSet id="create_faculty_user" author="Aleksandr@DevDB">
+
+        <createTable tableName="faculty_user">
+            <column name="user_id" type="bigint" autoIncrement="true" >
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="first_name" type="varchar(50)" >
+                <constraints nullable="false"/>
+            </column>
+            <column name="last_name" type="varchar(50)" >
+                <constraints nullable="false"/>
+            </column>
+            <column name="login" type="varchar(50)" >
+                <constraints nullable="false"/>
+            </column>
+            <column name="password" type="varchar(60)" >
+                <constraints nullable="false"/>
+            </column>
+            <column name="email" type="varchar(50)" >
+                <constraints nullable="false"/>
+            </column>
+            <column name="telephone" type="varchar(20)" >
+                <constraints nullable="false"/>
+            </column>
+            <column name="role" type="varchar(30)" >
+                <constraints nullable="false"/>
+            </column>
+            <column name="user_blocked" type="boolean" >
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <createIndex indexName="login_x0" tableName="faculty_user" unique="true">
+            <column name="login"/>
+        </createIndex>
+        <createIndex indexName="email_x1" tableName="faculty_user">
+            <column name="email"/>
+        </createIndex>
+
+    </changeSet>
+
+    <changeSet id="tag-1.1" author="Aleksandr@DevDB">
+        <tagDatabase tag="1.1"/>
+    </changeSet>
+
+</databaseChangeLog>

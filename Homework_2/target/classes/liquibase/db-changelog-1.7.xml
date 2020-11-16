@@ -1,0 +1,71 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                             http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+
+    <changeSet id="add-fk-between-registration-and-faculty-user" author="Aleksandr@DevDB">
+        <addForeignKeyConstraint constraintName="fk_registration_faculty_user"
+                                 baseTableName="registration"
+                                 baseColumnNames="user_id"
+                                 referencedTableName="faculty_user"
+                                 referencedColumnNames="user_id" />
+    </changeSet>
+
+    <changeSet id="add-fk-between-registration-and-course" author="Aleksandr@DevDB">
+        <addForeignKeyConstraint constraintName="fk_registration_course"
+                                 baseTableName="registration"
+                                 baseColumnNames="course_id"
+                                 referencedTableName="course"
+                                 referencedColumnNames="course_id" />
+    </changeSet>
+
+    <changeSet id="add-fk-between-course-and-faculty-user" author="Aleksandr@DevDB">
+        <addForeignKeyConstraint constraintName="fk_course_faculty_user"
+                                 baseTableName="course"
+                                 baseColumnNames="user_id"
+                                 referencedTableName="faculty_user"
+                                 referencedColumnNames="user_id" />
+    </changeSet>
+
+    <!--<changeSet id="add-fk-notebook-and-faculty-user" author="Aleksandr@DevDB">-->
+        <!--<addForeignKeyConstraint constraintName="fk_notebook_faculty_user"-->
+                                 <!--baseTableName="notebook"-->
+                                 <!--baseColumnNames="user_id"-->
+                                 <!--referencedTableName="faculty_user"-->
+                                 <!--referencedColumnNames="user_id" />-->
+    <!--</changeSet>-->
+
+    <!--<changeSet id="add-fk-between-notebook-and-course" author="Aleksandr@DevDB">-->
+        <!--<addForeignKeyConstraint constraintName="fk_notebook_course"-->
+                                 <!--baseTableName="notebook"-->
+                                 <!--baseColumnNames="course_id"-->
+                                 <!--referencedTableName="course"-->
+                                 <!--referencedColumnNames="course_id" />-->
+    <!--</changeSet>-->
+
+    <changeSet id="add-fk-between-course-topic-and-course" author="Aleksandr@DevDB">
+        <addForeignKeyConstraint constraintName="fk_course_topic_course"
+                                 baseTableName="course_topic"
+                                 baseColumnNames="course_id"
+                                 referencedTableName="course"
+                                 referencedColumnNames="course_id" />
+    </changeSet>
+
+    <changeSet id="add-fk-between-course-topic-and-topic" author="Aleksandr@DevDB">
+        <addForeignKeyConstraint constraintName="fk_course_topic_topic"
+                                 baseTableName="course_topic"
+                                 baseColumnNames="topic_id"
+                                 referencedTableName="topic"
+                                 referencedColumnNames="topic_id" />
+    </changeSet>
+    <!--baseTableName="dates"  table with fk-->
+    <!--baseColumnNames="account_id" fk-->
+    <!--referencedTableName="accounts" table with pk-->
+    <!--referencedColumnNames="account_id" pk-->
+
+    <changeSet id="tag-1.7" author="Aleksandr@DevDB">
+        <tagDatabase tag="1.7"/>
+    </changeSet>
+</databaseChangeLog>
+
