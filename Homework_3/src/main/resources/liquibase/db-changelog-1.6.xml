@@ -1,0 +1,32 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                             http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+
+    <changeSet id="create_notebook" author="Aleksandr@DevDB">
+
+        <createTable tableName="notebook">
+            <column name="notebook_id" type="bigint" autoIncrement="true" >
+                <constraints primaryKey="true" nullable="false"  />
+            </column>
+            <column name="user_id" type="bigint">
+                <constraints nullable="false" />
+            </column>
+            <column name="course_id" type="bigint" >
+                <!--<constraints nullable="false" />-->
+            </column>
+            <column name="student_mark" type="int">
+                <!--<constraints nullable="false" />-->
+            </column>
+            <column name="approve" type="boolean">
+                <constraints nullable="false" />
+            </column>
+        </createTable>
+
+    </changeSet>
+
+    <changeSet id="tag-1.6" author="Aleksandr@DevDB">
+        <tagDatabase tag="1.6"/>
+    </changeSet>
+</databaseChangeLog>

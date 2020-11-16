@@ -1,0 +1,26 @@
+span {
+color: red;
+font-size: 120%;
+}
+button {     /* кнопка для регистрации */
+margin-left: 2%;
+background: green;
+padding: 4px 25px;
+border-radius: 8px;
+color:white;
+border:0px;
+}
+input {
+border-radius: 6px;
+margin-top: -0.5%;
+margin-bottom: -0.5%;
+padding: 4px 20px;
+width: 48%;
+}
+
+
+
+
+
+
+

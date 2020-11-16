@@ -1,0 +1,48 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                             http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+
+    <changeSet id="create_course" author="Aleksandr@DevDB">
+
+        <createTable tableName="course">
+            <column name="course_id" type="bigint" autoIncrement="true">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="course_name" type="varchar(70)" >
+                <constraints nullable="false"/>
+            </column>
+            <column name="start_time" type="datetime" >
+                <constraints nullable="false"/>
+            </column>
+            <column name="duration_weeks" type="int" >
+                <constraints nullable="false"/>
+            </column>
+            <column name="student_count" type="int" >
+                <!--<constraints nullable="false"/>-->
+            </column>
+            <column name="user_id" type="bigint" >
+                <constraints nullable="false"/>
+            </column>
+            <column name="status" type="varchar(20)">
+                <constraints nullable="false" />
+            </column>
+            <column name="price" type="int">
+                <constraints nullable="false" />
+            </column>
+        </createTable>
+
+        <!--<rollback>-->
+            <!--<dropTable tableName="course_test"/>-->
+        <!--</rollback>-->
+        <createIndex indexName="course_name_x0" tableName="course" unique="true">
+            <column name="course_name"/>
+        </createIndex>
+
+    </changeSet>
+
+    <changeSet id="tag-1.2" author="Aleksandr@DevDB">
+        <tagDatabase tag="1.2"/>
+    </changeSet>
+</databaseChangeLog>
