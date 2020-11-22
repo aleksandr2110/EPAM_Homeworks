@@ -1,0 +1,46 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Faculty Spring:war exploded">
+    <output-path>$PROJECT_DIR$/target/aspectmash-spring</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="Faculty Spring" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: org.springframework:spring-core:5.2.0.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-jcl:5.2.0.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-web:5.2.0.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-beans:5.2.0.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:5.2.0.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-expression:5.2.0.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-tx:5.2.0.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-crypto:5.2.0.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-jdbc:5.2.0.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-context:5.2.0.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-aop:5.2.0.RELEASE" />
+          <element id="library" level="project" name="Maven: commons-dbcp:commons-dbcp:1.4" />
+          <element id="library" level="project" name="Maven: commons-pool:commons-pool:1.5.4" />
+          <element id="library" level="project" name="Maven: jstl:jstl:1.2" />
+          <element id="library" level="project" name="Maven: org.mindrot:jbcrypt:0.3m" />
+          <element id="library" level="project" name="Maven: org.liquibase:liquibase-core:3.6.2" />
+          <element id="library" level="project" name="Maven: org.yaml:snakeyaml:1.18" />
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.25" />
+          <element id="library" level="project" name="Maven: ch.qos.logback:logback-classic:1.2.3" />
+          <element id="library" level="project" name="Maven: ch.qos.logback:logback-core:1.2.3" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.8.5" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.8.5" />
+          <element id="library" level="project" name="Maven: org.aspectj:aspectjrt:1.9.4" />
+          <element id="library" level="project" name="Maven: org.aspectj:aspectjweaver:1.9.4" />
+          <element id="library" level="project" name="Maven: org.aspectj:aspectjtools:1.9.4" />
+          <element id="library" level="project" name="Maven: javax.transaction:javax.transaction-api:1.2" />
+          <element id="library" level="project" name="Maven: mysql:mysql-connector-java:8.0.17" />
+          <element id="library" level="project" name="Maven: com.google.protobuf:protobuf-java:3.6.1" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/target/aspectmash-spring/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="Faculty Spring/web/Web" />
+    </root>
+  </artifact>
+</component>
