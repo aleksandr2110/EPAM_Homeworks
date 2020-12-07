@@ -1,0 +1,26 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                             http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+
+    <changeSet id="create_topic" author="Aleksandr@DevDB">
+
+        <createTable tableName="topic">
+            <column name="topic_id" type="bigint" autoIncrement="true" >
+                <constraints primaryKey="true" nullable="false"  />
+            </column>
+            <column name="topic_name" type="varchar(80)">
+                <constraints nullable="true" />
+            </column>
+        </createTable>
+
+        <createIndex indexName="topic_name_x0" tableName="topic" unique="true">
+            <column name="topic_name"/>
+        </createIndex>
+    </changeSet>
+
+    <changeSet id="tag-1.3" author="Aleksandr@DevDB">
+        <tagDatabase tag="1.3"/>
+    </changeSet>
+</databaseChangeLog>
