@@ -26,13 +26,8 @@ import java.util.List;
 public class MyUserDetailsService implements UserDetailsService {
 
     @Autowired
-    @Qualifier("faculty")
-    private FacultyUserServ facultyUserService;
-////    private FacultyUserDao facultyUserService;
+    private FacultyUserService  facultyUserService;
 
-//    public FacultyUserServ facultyUserServ() {
-//        return new FacultyUserServ();
-//    }
     private static Logger logger = LoggerFactory.getLogger(MyUserDetailsService.class);
 
     public MyUserDetailsService() {}
