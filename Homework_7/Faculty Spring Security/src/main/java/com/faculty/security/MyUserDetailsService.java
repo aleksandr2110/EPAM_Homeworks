@@ -39,67 +39,37 @@ public class MyUserDetailsService implements UserDetailsService {
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException { // (1)
+        logger.info("username {}", username);
         FacultyUser facultyUser = null;
+        List<GrantedAuthority> grantedAuthoritiesList = new ArrayList();
+        System.out.println("user name: " + username);
+        //String usernam = "alenadev";
         try {
             facultyUser = facultyUserService.getUserByLogin(username);
+            logger.info("Found user : {} with role: {}", facultyUser.getLogin(), facultyUser.getRole());
+            //grantedAuthorities.add(new SimpleGrantedAuthority(facultyUser.getRole()));
+            //
+            if (facultyUser.getRole().equals("admin")) {
+                //GrantedAuthority authorityAdmin = new SimpleGrantedAuthority("ROLE_ADMIN"); // ROLE_ADMIN
+                //GrantedAuthority authorityUser = new SimpleGrantedAuthority("ROLE_USER");
+                GrantedAuthority authorityAdmin = new SimpleGrantedAuthority("ADMIN"); // ROLE_ADMIN
+                GrantedAuthority authorityUser = new SimpleGrantedAuthority("USER");
+                grantedAuthoritiesList.add(authorityAdmin);
+                grantedAuthoritiesList.add(authorityUser);
+            } else {
+                //GrantedAuthority authorityUser = new SimpleGrantedAuthority("ROLE_USER");
+                GrantedAuthority authorityUser = new SimpleGrantedAuthority("USER");
+                grantedAuthoritiesList.add(authorityUser);
+            }
+//            for(Role role : facultyUser.getRole()){
+//            }
             if (facultyUser == null) {
+                logger.error("User with name " + username + " wasn't found in the database size " + username.length());
                 throw new UsernameNotFoundException("User " + facultyUser.getFirstName() + " wasn't found in the database");
             }
-
         } catch (ValidationException e) {
             e.printStackTrace();
         }
-        logger.info("Found User: " + facultyUser.toString());
-        List<GrantedAuthority> grantedAuthoritiesList = new ArrayList<GrantedAuthority>();
-        if(facultyUser.getRole().equals("admin")) {
-            GrantedAuthority authorityAdmin = new SimpleGrantedAuthority("ROLE_ADMIN");
-            GrantedAuthority authorityUser = new SimpleGrantedAuthority("ROLE_USER");
-            grantedAuthoritiesList.add(authorityAdmin);
-            grantedAuthoritiesList.add(authorityUser);
-
-        }
-        else {
-            GrantedAuthority authorityUser = new SimpleGrantedAuthority("ROLE_USER");
-            grantedAuthoritiesList.add(authorityUser);
-
-        }
-        final FacultyUser user = facultyUser;
-        UserDetails userDetails = new UserDetails() {
-            @Override
-            public Collection<? extends GrantedAuthority> getAuthorities() {
-                return grantedAuthoritiesList;
-            }
-
-            @Override
-            public String getPassword() {
-                return user.getPassword();
-            }
-
-            @Override
-            public String getUsername() {
-                return user.getLogin();
-            }
-
-            @Override
-            public boolean isAccountNonExpired() {
-                return true;
-            }
-
-            @Override
-            public boolean isAccountNonLocked() {
-                return true;
-            }
-
-            @Override
-            public boolean isCredentialsNonExpired() {
-                return true;
-            }
-
-            @Override
-            public boolean isEnabled() {
-                return true;
-            }
-        };
-        return userDetails;
+        return new org.springframework.security.core.userdetails.User(facultyUser.getLogin(), facultyUser.getPassword(), grantedAuthoritiesList);
     }
 }
