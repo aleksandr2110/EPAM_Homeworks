@@ -1,0 +1,8 @@
+"user_id","first_name","last_name","login","password","email","telephone","role","user_blocked"
+"1","Aleksandr","Oleinik","facultadmin","$2a$08$yPguBkmdoEuQY/AorLUWyun36SWL5w87IHPmJjVIj6mIvFnKvrTpu","utel2010@i.ua","0635774213","admin","false"
+"2","Alena","Protas","alenadev","$2a$08$bCsUUqQLx.40kT.29.3/cOG.j5Bzo9OirdOXVzaLTIrMZtnPfyW1i","alenka2212@ukr.net","0993042555","user","false"
+"3","Александр","Михальченко","aleksandrdev","$2a$08$TlgnC9k9C904AncGeDIO1uKLfXBEEE52KROGcOqXwSAA6pqfQ.gXq","aam@anahoret.com","0972136787","user","false"
+"4","Сергей","Алтухов","sergdev","$2a$08$yEoNJxzSTMKUZfOE5u030.jEfdlWBItxUM8frHXbZIMAxvmxiQv.e","sa@anahoret.com","0956781251","teacher","false"
+"5","Дмитрий","Колесников","dmitriy21","$2a$08$oaf/bCMEh7QCAa4aYDOSdOAEnvob/oyi3LMVhXMK06jyKI5uO4lg6","dmitiy21@gmail.com","0967811281","user","false"
+"6","Георгий","Молчанов","georgiydev","$2a$08$WPJaYy9a1dKH8yALypSu.O4Mjqq3N5wSjpS2v2/C/ZMCNNQ0bunFu","georgiy-epam@gmail.com","0982278178","teacher","false"
+"7","Алексей","Леонов","lexa","$2a$08$T6TF7IwGs38vte7.n6114uaGOlFaJeTUNIRJF4pvIDRlxBm707KP2","lexa-epam@gmail.com","0994622532","user","false"
