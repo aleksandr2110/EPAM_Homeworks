@@ -15,6 +15,7 @@ public class RegistrationAssemblerImpl implements RegistrationAssembler {
         registration.setCourseId(dto.getCourseId());
         registration.setApprove(dto.isApprove());
         registration.setRegistrationId(dto.getRegistrationId());
+        registration.setStudentMark(dto.getStudentMark());
         return registration;
     }
 
@@ -24,6 +25,7 @@ public class RegistrationAssemblerImpl implements RegistrationAssembler {
         dto.setRegistrationId(registration.getRegistrationId());
         dto.setCourseId(registration.getCourseId());
         dto.setApprove(registration.isApprove());
+        dto.setUserId(registration.getUserId());
         dto.setStudentMark(registration.getStudentMark());
         return dto;
     }

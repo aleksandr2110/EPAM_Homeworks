@@ -51,12 +51,13 @@ public class RegistrationServiceImplIT {
         registration = new Registration();
         registration.setRegistrationId(UUID.randomUUID());
         registration.setCourseId(course.getCourseId());
+        registration.setUserId(facultyUserDto.getUserId());
         registration.setApprove(approve);
         registration.setStudentMark(studentMark);
-        registration.setUserId(facultyUserDto.getUserId());
         registration.setFacultyUser(facultyUserAssembler.assemble(facultyUserDto));
         registration.setCourse(course);
         RegistrationDto registrationDto = registrationAssembler.assemble(registration);
         RegistrationDto regDto = registrationService.create(registrationDto);
+        assertEquals(studentMark, regDto.getStudentMark());
     }
 }
