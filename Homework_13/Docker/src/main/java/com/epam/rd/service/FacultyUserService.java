@@ -11,4 +11,5 @@ public interface FacultyUserService {
     List<FacultyUser> findAll();
     List<FacultyUser> findFacultyUserByRole(String role);
     List<FacultyUser> findByRoleOrderByTelephone(String role);
+    FacultyUser save(FacultyUser entity);
 }

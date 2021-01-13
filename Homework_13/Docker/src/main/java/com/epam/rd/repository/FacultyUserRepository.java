@@ -15,4 +15,5 @@ public interface FacultyUserRepository extends JpaRepository<FacultyUser, Long> 
     List<FacultyUser> findAll();
     List<FacultyUser> findFacultyUserByRole(String role);
     List<FacultyUser> findByRoleOrderByTelephone(String role);
+    FacultyUser save(FacultyUser entity);
 }

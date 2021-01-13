@@ -32,4 +32,9 @@ public class FacultyUserServiceImpl implements FacultyUserService {
     public List<FacultyUser> findByRoleOrderByTelephone(String role) {
         return facultyUserRepository.findByRoleOrderByTelephone(role);
     }
+
+    @Override
+    public FacultyUser save(FacultyUser entity) {
+        return facultyUserRepository.save(entity);
+    }
 }

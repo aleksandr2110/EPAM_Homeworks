@@ -4,17 +4,13 @@ networks:
   mynet:
     driver: bridge
 
-volumes:
-  data:
 
 services:
 
   database:
-    image: mysql:5.7
+    image: mysql
     ports:
       - 3307:3306
-    volumes:
-      - data:/var/lib/mysql
     networks:
       - mynet
     container_name: super_mysql
@@ -24,6 +20,7 @@ services:
       MYSQL_USER: user
       MYSQL_PASSWORD: sqlpas
       MYSQL_DATABASE: faculty
+      MYSQL_RANDOM_ROOT_PASSWORD: 'yes'
 
   webapp:
     build: .
@@ -42,4 +39,3 @@ services:
       timeout: 10s
       retries: 3
       start_period: 40s
-
