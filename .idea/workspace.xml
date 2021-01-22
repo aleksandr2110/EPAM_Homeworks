@@ -2,37 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4da606c9-4fc9-4ebb-b0d4-1b63bacf321b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Homework_12/Cache 2 level/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Homework_12/Cache 2 level/src/main/java/com/epam/rd/Main.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Homework_12/Cache 2 level/src/main/java/com/epam/rd/domain/BankAccount.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Homework_12/Cache 2 level/src/main/java/com/epam/rd/domain/BillingDetails.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Homework_12/Cache 2 level/src/main/java/com/epam/rd/domain/Buyer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Homework_12/Cache 2 level/src/main/java/com/epam/rd/domain/CreditCard.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Homework_12/Cache 2 level/src/main/java/com/epam/rd/repository/BankAccountDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Homework_12/Cache 2 level/src/main/java/com/epam/rd/repository/BankAccountDaoImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Homework_12/Cache 2 level/src/main/java/com/epam/rd/repository/BillingDetailsDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Homework_12/Cache 2 level/src/main/java/com/epam/rd/repository/BillingDetailsDaoImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Homework_12/Cache 2 level/src/main/java/com/epam/rd/repository/BuyerDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Homework_12/Cache 2 level/src/main/java/com/epam/rd/repository/BuyerDaoImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Homework_12/Cache 2 level/src/main/java/com/epam/rd/repository/BuyerRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Homework_12/Cache 2 level/src/main/java/com/epam/rd/repository/CreditCardDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Homework_12/Cache 2 level/src/main/java/com/epam/rd/repository/CreditCardDaoImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Homework_12/Cache 2 level/src/main/java/com/epam/rd/service/BankAccountService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Homework_12/Cache 2 level/src/main/java/com/epam/rd/service/BankAccountSeviceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Homework_12/Cache 2 level/src/main/java/com/epam/rd/service/BillingDetailsService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Homework_12/Cache 2 level/src/main/java/com/epam/rd/service/BillingDetailsServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Homework_12/Cache 2 level/src/main/java/com/epam/rd/service/BuyerService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Homework_12/Cache 2 level/src/main/java/com/epam/rd/service/BuyerServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Homework_12/Cache 2 level/src/main/java/com/epam/rd/service/CreditCardService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Homework_12/Cache 2 level/src/main/java/com/epam/rd/service/CreditCardServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Homework_12/Cache 2 level/src/main/resources/META-INF/persistence.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Homework_12/Cache 2 level/src/main/resources/database.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Homework_12/Cache 2 level/src/test/java/com/epam/rd/HibernateConfig.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Homework_12/Cache 2 level/src/test/java/com/epam/rd/IntegrationTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Homework_12/Cache 2 level/src/test/java/com/epam/rd/service/BankAccountTestIT.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Homework_12/Cache 2 level/src/test/java/com/epam/rd/service/BillingDetailsTestIT.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Homework_12/Cache 2 level/src/test/java/com/epam/rd/service/BuyerTestIT.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Homework_12/Cache 2 level/src/test/java/com/epam/rd/service/CreditCardTestIT.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Homework_15/AWS/target/spring-boot-aws-exe.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Homework_15/AWS/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Homework_15/AWS/src/main/java/com/epam/rd/Application.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Homework_15/AWS/src/main/java/com/epam/rd/config/AppConfig.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Homework_15/AWS/src/main/java/com/epam/rd/config/CustomHealthCheck.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Homework_15/AWS/src/main/java/com/epam/rd/controller/FacultyUserController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Homework_15/AWS/src/main/java/com/epam/rd/entity/FacultyUser.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Homework_15/AWS/src/main/java/com/epam/rd/repository/FacultyUserRepository.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Homework_15/AWS/src/main/java/com/epam/rd/service/FacultyUserService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Homework_15/AWS/src/main/java/com/epam/rd/service/FacultyUserServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Homework_15/AWS/src/main/resources/application.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Homework_15/AWS/src/main/resources/database.sql" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Homework_15/HW15.yaml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Homework_15/Task HW15 AWS" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -52,7 +35,50 @@
     <favorites_list name="facultyspring" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="FacultyUserController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Homework_13/Docker/src/main/java/com/epam/rd/controller/FacultyUserController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="714">
+              <caret line="48" column="5" lean-forward="false" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Homework_13/Docker/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="46" lean-forward="false" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="docker-compose.yaml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Homework_13/Docker/docker-compose.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="680">
+              <caret line="40" column="23" lean-forward="false" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Homework_13/Docker/Dockerfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="62" lean-forward="false" selection-start-line="9" selection-start-column="62" selection-end-line="9" selection-end-column="62" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -86,13 +112,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/faculty/exception/CrudException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/faculty/repository/Impl/FacultyDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/faculty/service/CourseService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/faculty/service/TopicService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/faculty/service/Impl/FacultyUserImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/faculty/converter/UserConverter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/faculty/util/Status.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/faculty/exception/ApplicationException.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/faculty/dto/FacultyUserDto.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/faculty/controller/Handler.java" />
@@ -137,6 +156,13 @@
         <option value="$PROJECT_DIR$/src/main/java/com/faculty/filter/UserFilter.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/faculty/controller/Login.java" />
+        <option value="$PROJECT_DIR$/Homework_13/Docker/src/main/java/com/epam/rd/repository/FacultyUserRepository.java" />
+        <option value="$PROJECT_DIR$/Homework_13/Docker/src/main/java/com/epam/rd/controller/FacultyUserController.java" />
+        <option value="$PROJECT_DIR$/Homework_13/Docker/src/main/java/com/epam/rd/service/FacultyUserService.java" />
+        <option value="$PROJECT_DIR$/Homework_13/Docker/src/main/java/com/epam/rd/service/FacultyUserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/Homework_13/Docker/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/Homework_13/Docker/docker-compose.yaml" />
+        <option value="$PROJECT_DIR$/Homework_13/Docker/Dockerfile" />
       </list>
     </option>
   </component>
@@ -213,7 +239,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -236,16 +261,67 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Homework_12" />
+              <option name="myItemId" value="target" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="facultyspring" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EPAM_Homeworks" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Cache 2 level" />
+              <option name="myItemId" value="Homework_15" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="facultyspring" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EPAM_Homeworks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Homework_15" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AWS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="facultyspring" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EPAM_Homeworks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Homework_15" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AWS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="target" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
@@ -257,17 +333,17 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Java\My projects\Faculty Spring\src\main\webapp\jsp\start" />
+      <recent name="D:\Java\My projects\Faculty Spring\src\main\webapp\jsp" />
+      <recent name="D:\Java\My projects\Faculty Spring\src\main" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Java\My projects\Faculty Spring\src\main\java\com\faculty\filter" />
       <recent name="D:\Java\My projects\Faculty Spring\src\main\java\com\faculty\validation" />
       <recent name="D:\Java\My projects\Faculty Spring\src\main\java\com\faculty\security" />
       <recent name="D:\Java\My projects\Faculty Spring\src\main\java\com\faculty\service" />
       <recent name="D:\Java\My projects\Faculty Spring\src\main\resources" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Java\My projects\Faculty Spring\src\main\webapp\jsp\start" />
-      <recent name="D:\Java\My projects\Faculty Spring\src\main\webapp\jsp" />
-      <recent name="D:\Java\My projects\Faculty Spring\src\main" />
     </key>
   </component>
   <component name="RunManager">
@@ -695,6 +771,9 @@
       <workItem from="1605437115116" duration="10126000" />
       <workItem from="1609177747058" duration="723000" />
       <workItem from="1609265408130" duration="1065000" />
+      <workItem from="1610466868104" duration="346000" />
+      <workItem from="1610557317042" duration="749000" />
+      <workItem from="1611315970938" duration="605000" />
     </task>
     <task id="LOCAL-00001" summary="Single/Joined Strategy Hibernate">
       <created>1609177840934</created>
@@ -703,11 +782,32 @@
       <option name="project" value="LOCAL" />
       <updated>1609177840934</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Docker. Docker Compose">
+      <created>1610394844498</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1610394844498</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Spring JMS">
+      <created>1610467018177</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1610467018177</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Docker Compose">
+      <created>1610557913827</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1610557913827</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90496000" />
+    <option name="totallyTimeSpent" value="94477000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1370" height="744" extended-state="0" />
@@ -732,11 +832,11 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31794873" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.289313" sideWeight="0.48979592" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3038168" sideWeight="0.48979592" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -745,6 +845,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -768,16 +869,17 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31794873" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28015268" sideWeight="0.48979592" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31794873" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2934947" sideWeight="0.48979592" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -794,7 +896,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Single/Joined Strategy Hibernate" />
     <MESSAGE value="Second Cache Hibernate" />
-    <option name="LAST_COMMIT_MESSAGE" value="Second Cache Hibernate" />
+    <MESSAGE value="Docker. Docker Compose" />
+    <MESSAGE value="Spring JMS" />
+    <MESSAGE value="Docker Compose" />
+    <option name="LAST_COMMIT_MESSAGE" value="Docker Compose" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -807,19 +912,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/faculty/service/RegistrationService.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/faculty/service/Impl/RegistrationServiceImpl.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/faculty/repository/CourseDao.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/faculty/repository/Impl/TopicDaoImpl.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/faculty/repository/Impl/RegistrationDaoImpl.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.2.0.RELEASE/spring-web-5.2.0.RELEASE.jar!/org/springframework/web/bind/annotation/RequestMapping.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="10" column="18" lean-forward="false" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/faculty/validation/UserInputValidator.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/faculty/controller/AdminApproveStudents.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/faculty/service/TopicService.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/faculty/service/CourseTopicService.java" />
@@ -870,5 +962,60 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/user/loginPage.jsp" />
     <entry file="file://$PROJECT_DIR$/pom.xml" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/faculty/controller/Login.java" />
+    <entry file="file://$PROJECT_DIR$/Homework_13/Docker/src/main/java/com/epam/rd/service/FacultyUserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="13" column="41" lean-forward="false" selection-start-line="13" selection-start-column="41" selection-end-line="13" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Homework_13/Docker/src/main/java/com/epam/rd/service/FacultyUserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="38" column="5" lean-forward="false" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Homework_13/Docker/src/main/java/com/epam/rd/repository/FacultyUserRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="17" column="41" lean-forward="false" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Homework_13/Docker/src/main/java/com/epam/rd/controller/FacultyUserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="48" column="5" lean-forward="false" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Homework_13/Docker/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="46" lean-forward="false" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Homework_13/Docker/docker-compose.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="40" column="23" lean-forward="false" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Homework_13/Docker/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="62" lean-forward="false" selection-start-line="9" selection-start-column="62" selection-end-line="9" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>

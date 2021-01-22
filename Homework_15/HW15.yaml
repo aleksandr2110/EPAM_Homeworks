@@ -1,0 +1,113 @@
+Description: Create a first EC2 instance
+Resources:
+  Host1:
+    Type: AWS::EC2::Instance
+    Properties:
+      SubnetId: !Ref Mysubnet
+      InstanceType: t2.micro
+      ImageId: ami-0502e817a62226e03
+      SecurityGroupIds:
+        - !GetAtt "Mysecgroup.GroupId"
+      UserData:
+        Fn::Base64: !Sub |
+          #!bin/bash -x
+          export DEBIAN_FRONTEND=noninteractive
+          apt -y update
+          apt install -y openjdk-8-jre-headless
+          apt-get install -y awscli
+          export AWS_ACCESS_KEY_ID=AKIAJQZIEMWMR3LQPZ2A
+          export AWS_SECRET_ACCESS_KEY=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
+          export AWS_DEFAULT_REGION=us-east-1
+          aws s3 cp s3://consign-aws-hw15/spring-boot-aws-exe.jar /home/ubuntu/spring-boot-aws-exe.jar
+          cd /home/ubuntu/
+          java -jar spring-boot-aws-exe.jar
+
+  Host2:
+    Type: AWS::EC2::Instance
+    Properties:
+      SubnetId: !Ref Mysubnet
+      InstanceType: t2.micro
+      ImageId: ami-0502e817a62226e03
+      SecurityGroupIds:
+         - !GetAtt "Mysecgroup.GroupId"
+      UserData:
+        Fn::Base64: !Sub |
+          #!bin/bash -x
+          export DEBIAN_FRONTEND=noninteractive
+          apt -y update
+          apt install -y openjdk-8-jre-headless
+          apt-get install -y awscli
+          export AWS_ACCESS_KEY_ID=AKIAJQZIEMWMR3LQPZ2A
+          export AWS_SECRET_ACCESS_KEY=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
+          export AWS_DEFAULT_REGION=us-east-1
+          aws s3 cp s3://consign-aws-hw15/spring-boot-aws-exe.jar /home/ubuntu/spring-boot-aws-exe.jar
+          cd /home/ubuntu/
+          java -jar spring-boot-aws-exe.jar
+
+  Mysecgroup:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupDescription: Enable SSH access via port 22
+      VpcId: !Ref Myvpc
+      SecurityGroupIngress:
+        - IpProtocol: tcp
+          FromPort: 0
+          ToPort: 65535
+          CidrIp: 0.0.0.0/0
+      SecurityGroupEgress:
+        - IpProtocol: tcp
+          FromPort: 0
+          ToPort: 65535
+          CidrIp: 0.0.0.0/0
+      Tags:
+        - Key: Name
+          Value: Mysecgroup
+  Myvpc:
+    Type: AWS::EC2::VPC
+    Properties:
+      CidrBlock: 10.0.0.0/16
+      EnableDnsSupport: true
+      EnableDnsHostnames: true
+      InstanceTenancy: default
+      Tags:
+        - Key: Name
+          Value: Myvpc
+  Mysubnet:
+    Type: AWS::EC2::Subnet
+    Properties:
+      AvailabilityZone: eu-central-1a
+      VpcId: !Ref Myvpc
+      CidrBlock: 10.0.0.0/16
+      MapPublicIpOnLaunch: true
+
+  Routetable:
+    Type: AWS::EC2::RouteTable
+    Properties:
+      VpcId: !Ref Myvpc
+
+  Route:
+    Type: AWS::EC2::Route
+    DependsOn: Myinternetgateway
+    Properties:
+      DestinationCidrBlock: 0.0.0.0/0
+      GatewayId: !Ref Myinternetgateway
+      RouteTableId: !Ref Routetable
+
+  SubnetARouteTableAssociation:
+    Type: AWS::EC2::SubnetRouteTableAssociation
+    Properties:
+      RouteTableId: !Ref Routetable
+      SubnetId: !Ref Mysubnet
+
+  Mygatewayattach:
+    Type: AWS::EC2::VPCGatewayAttachment
+    Properties:
+      InternetGatewayId: !Ref Myinternetgateway
+      VpcId: !Ref Myvpc
+ 
+  Myinternetgateway:
+    Type: AWS::EC2::InternetGateway
+    Properties:
+      Tags:
+        - Key: Name
+          Value: Mygtwy
