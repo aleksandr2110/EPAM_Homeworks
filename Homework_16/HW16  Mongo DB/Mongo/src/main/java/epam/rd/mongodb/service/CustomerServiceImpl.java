@@ -16,6 +16,11 @@ public class CustomerServiceImpl implements CustomerService {
 
     public CustomerServiceImpl() {}
 
+    @Autowired
+    public CustomerServiceImpl(CustomerRepositoryMI customerRepository) {
+        this.customerRepository = customerRepository;
+    }
+
     @Override
     public Customer create(Customer customer) {
         return customerRepository.addNewCustomer(customer);
@@ -24,11 +29,6 @@ public class CustomerServiceImpl implements CustomerService {
     @Override
     public long updateCustomer(Customer customer)  {
         return customerRepository.updateCustomer(customer);
-    }
-
-    @Autowired
-    public CustomerServiceImpl(CustomerRepositoryMI customerRepository) {
-        this.customerRepository = customerRepository;
     }
 
     @Override
@@ -47,14 +47,15 @@ public class CustomerServiceImpl implements CustomerService {
     }
 
     @Override
-    public List<CustomerDetail> findCustomersByAddress(Address address) {
-        return customerRepository.findCustomersByAddress(address);
+    public List<Customer> findCustomersAccount(LocalDate localDate) {
+        return customerRepository.findCustomersAccount(localDate);
     }
 
     @Override
-    public Customer findByAccount(Long account) {
-        return null;
+    public List<Customer> findCustomersAddress(Address address) {
+        return customerRepository.findCustomersAddress(address);
     }
+
 
 
 }

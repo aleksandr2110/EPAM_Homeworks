@@ -72,14 +72,22 @@ public class CustomerController {
         return customerService.getCustomersByFirstLast(firstName, lastName);
     }
 
-    //  http://localhost:8102/customer-by-address?street=Krotova&city=Dnipro&countryCode=14811
+    //  http://localhost:8102/customer-by-address?street=Tarasa56&city=Dnipro&countryCode=14811
     @GetMapping(value="/customer-by-address",  produces = {MediaType.APPLICATION_JSON_VALUE})
-    public List<CustomerDetail> findCustomersByAddress(String street, String city, String countryCode)
+    public List<Customer> findCustomersAddress(String street, String city, String countryCode)
     {
-        LOG.info("Getting customer(s) by first and last name");
+        LOG.info("Getting customer(s) by address");
         Address address = new Address(street, city, countryCode);
-        return customerService.findCustomersByAddress(address);
+        return customerService.findCustomersAddress(address);
     }
 
+    //  http://localhost:8102/customer-by-expired?expirationDate=25-08-2020
+    @GetMapping(value="/customer-by-expired",  produces = {MediaType.APPLICATION_JSON_VALUE})
+    public List<Customer> findCustomersAccount(@RequestParam (name = "expirationDate") String expDate) {
+        LOG.info("Getting customer(s) by expired date of card");
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("d-MM-yyyy");
+        LocalDate localDate = LocalDate.parse(expDate, formatter);
+        return customerService.findCustomersAccount(localDate);
+    }
 
 }

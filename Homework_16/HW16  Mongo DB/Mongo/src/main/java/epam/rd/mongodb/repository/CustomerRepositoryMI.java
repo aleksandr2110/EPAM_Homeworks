@@ -15,11 +15,7 @@ public interface CustomerRepositoryMI {
     List<Customer> getCustomersByFirstLast(String firstName, String lastName);
     long updateCustomer(Customer customer);
     Customer addNewCustomer(Customer customer);
-    List<CustomerDetail> findCustomersByAddress(Address address);
-
-    List<Customer> findCustomerByLastName(String lastName);
-    List<Customer> findCustomerByAddress(String street, String city, String countryCode);
-    List<Customer> findCustomerByCardNumber(String Long);
-    List<Customer> findCustomerByExpDate(LocalDateTime date);
+    List<Customer> findCustomersAddress(Address address);
+    List<Customer> findCustomersAccount(LocalDate localDate);
 
 }

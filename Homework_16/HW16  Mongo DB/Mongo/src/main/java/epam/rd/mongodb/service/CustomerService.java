@@ -14,7 +14,7 @@ public interface CustomerService {
     Customer findById(String id);
     List<Customer> getCustomersByFirstLast(String firstName, String lastName);
     long updateCustomer(Customer customer) ;
-    List<CustomerDetail> findCustomersByAddress(Address address);
-    Customer findByAccount(Long account);
+    List<Customer> findCustomersAddress(Address address);
+    List<Customer> findCustomersAccount(LocalDate localDate);
 
 }

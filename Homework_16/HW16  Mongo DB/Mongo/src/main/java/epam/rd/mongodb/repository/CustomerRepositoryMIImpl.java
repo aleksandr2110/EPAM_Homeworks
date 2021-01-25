@@ -66,33 +66,26 @@ public class CustomerRepositoryMIImpl implements CustomerRepositoryMI {
     }
 
     @Override
-    public List<CustomerDetail> findCustomersByAddress(Address address) {
-        Aggregation aggregation = Aggregation.newAggregation(match(Criteria.where("address.city").is(address.getCity()))
-        , group("city"), project("city"));
-        //fires an aggregate query on to Mongo to fetch the count of businesses
-        AggregationResults<CustomerDetail> groupResults = mongoTemplate.aggregate(aggregation, "customers", CustomerDetail.class);
-        List<CustomerDetail> result = groupResults.getMappedResults();
-        return result;
+    public List<Customer> findCustomersAddress(Address address) {
+        Query query = new Query();
+        Criteria street = Criteria.where("address.street").is(address.getStreet());
+        Criteria city = Criteria.where("address.city").is(address.getCity());
+        Criteria countryCode = Criteria.where("address.countryCode").is(address.getCountryCode());
+        Criteria andCr = new Criteria().andOperator(street, city, countryCode);
+        query.addCriteria(andCr);
+        List<Customer> list = new ArrayList();
+        list = mongoTemplate.find(query, Customer.class);
+        return list;
     }
 
     @Override
-    public List<Customer> findCustomerByLastName(String lastName) {
-        return null;
-    }
-
-    @Override
-    public List<Customer> findCustomerByAddress(String street, String city, String countryCode) {
-        return null;
-    }
-
-    @Override
-    public List<Customer> findCustomerByCardNumber(String Long) {
-        return null;
-    }
-
-    @Override
-    public List<Customer> findCustomerByExpDate(LocalDateTime date) {
-        return null;
+    public List<Customer> findCustomersAccount(LocalDate localDate) {
+        Query query = new Query();
+        Criteria expirationDate = Criteria.where("accounts.expirationDate").lt(localDate);
+        query.addCriteria(expirationDate);
+        List<Customer> list = new ArrayList();
+        list = mongoTemplate.find(query, Customer.class);
+        return list;
     }
 
 }
